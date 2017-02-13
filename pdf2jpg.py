@@ -9,7 +9,7 @@ install tools/ImageMagick-6.9.7-6-Q8-x86-dll.exe
 Latest version : http://www.imagemagick.org/download/binaries/
 you have to check Install development headers and libraries for C and C++
 then you have to set MAGICK_HOME environment variable to the path of ImageMagick 
-(e.g. C:\Program Files\ImageMagick-6.9.7-6-Q8)
+(e.g. C:\Program Files (x86)\ImageMagick-6.9.7-Q8)
 
 2/
 Install tools/gs920w32_ghostscript_32bits.exe then add this to your PATH environment variable
