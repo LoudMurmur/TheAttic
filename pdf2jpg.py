@@ -35,7 +35,6 @@ REQUIRED_DPI = "300"
 
 pdf_filename = 'merged_pdfs.pdf'
 name, _ = os.path.splitext(pdf_filename)
-jpg_filename = name + '.jpg'
 
 print 'processing %s' %pdf_filename
 reader = PdfFileReader(open(pdf_filename, "rb"))
@@ -50,6 +49,6 @@ for page_num in xrange(reader.getNumPages()):
     im = Image()
     im.density(REQUIRED_DPI)
     im.read(temp.name)
-    im.write(jpg_filename + '_%s.jpg' %str(page_num+1).zfill(4))
+    im.write(name + '_%s.jpg' %str(page_num+1).zfill(4))
 
     os.remove(temp.name)
